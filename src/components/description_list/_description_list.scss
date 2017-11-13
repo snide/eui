@@ -94,6 +94,22 @@
   }
 
   &.euiDescriptionList--inline {
+    font-family: $euiCodeFontFamily;
+    word-break: break-all;
+    filter: grayscale(100%);
+    padding: $euiSizeS;
+    border: solid 1px transparent;
+    border-bottom: $euiBorderThin;
+    margin-top: -1px;
+
+    &:hover {
+      filter: none;
+      border: $euiBorderThin;
+      cursor: pointer;
+      background: $euiColorEmptyShade;
+      @include euiBottomShadowMedium;
+      background-color: $euiColorHighlight;
+    }
 
     .euiDescriptionList__title {
       @include euiFontSizeS;
@@ -101,9 +117,10 @@
       border-radius: $euiBorderRadius;
       font-weight: $euiFontWeightRegular;
       background: $euiColorLightestShade;
-      border: $euiBorderThin;
       padding:  0 $euiSizeXS;
+      color: $euiColorFullShade;
       margin: 0 $euiSizeXS;
+      word-break: normal;
 
       // Make sure the first <dt> doesn't get a margine.
       &:first-of-type {

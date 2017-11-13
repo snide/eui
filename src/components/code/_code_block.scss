@@ -46,7 +46,6 @@
     display: inline-block;
     white-space: pre;
     color: $euiTextColor;
-    font-size: 75%; // 1
     padding:  0 $euiSizeXS;
     background: $euiColorLightestShade;
 
@@ -59,4 +58,9 @@
   &.euiCodeBlock--transparentBackground {
     background: transparent;
   }
+
+  &.euiCodeBlock--inline.euiCodeBlock--transparentBackground {
+    display: inline;
+  }
+
 }

@@ -58,6 +58,7 @@ import './assets/logo_kibana.svg';
 import './assets/map_marker.svg';
 import './assets/minus_in_circle.svg';
 import './assets/node.svg';
+import './assets/number.svg';
 import './assets/pencil.svg';
 import './assets/pin.svg';
 import './assets/plus_in_circle.svg';
@@ -67,6 +68,7 @@ import './assets/share.svg';
 import './assets/sort_down.svg';
 import './assets/sort_up.svg';
 import './assets/star_empty.svg';
+import './assets/string.svg';
 import './assets/tear.svg';
 import './assets/trash.svg';
 import './assets/user.svg';
@@ -131,6 +133,7 @@ const typeToIconMap = {
   minusInCircle: 'minus_in_circle',
   monitoringApp: 'app_monitoring',
   node: 'node',
+  number: 'number',
   pencil: 'pencil',
   pin: 'pin',
   plusInCircle: 'plus_in_circle',
@@ -140,6 +143,7 @@ const typeToIconMap = {
   sortDown: 'sort_down',
   sortUp: 'sort_up',
   starEmpty: 'star_empty',
+  string: 'string',
   tear: 'tear',
   timelionApp: 'app_timelion',
   trash: 'trash',

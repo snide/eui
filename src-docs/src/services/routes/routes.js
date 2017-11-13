@@ -112,6 +112,9 @@ import TitleExample
 import AdvancedSettingsSandbox
   from '../../views/kibana/advanced_settings_sandbox';
 
+import DiscoverSandbox
+  from '../../views/kibana/discovery_sandbox';
+
 import WatchesSandbox
   from '../../views/kibana/watches_sandbox';
 
@@ -226,6 +229,9 @@ const components = [{
 const sandboxes = [{
   name: 'Advanced Settings',
   component: AdvancedSettingsSandbox,
+}, {
+  name: 'Discover',
+  component: DiscoverSandbox,
 }, {
   name: 'Watches',
   component: WatchesSandbox,
