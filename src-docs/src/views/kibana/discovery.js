@@ -282,7 +282,7 @@ export default class extends Component {
               <EuiPageContentHeaderSection>
                 <EuiFlexGroup gutterSize="m">
                   <EuiFlexItem>
-                    <EuiButtonEmpty iconType="gear" size="xs">Format output</EuiButtonEmpty>
+                    <EuiButtonEmpty iconType="gear" size="xs">Format display</EuiButtonEmpty>
                   </EuiFlexItem>
                 </EuiFlexGroup>
               </EuiPageContentHeaderSection>

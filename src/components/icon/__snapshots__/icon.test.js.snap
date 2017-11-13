@@ -808,6 +808,19 @@ exports[`EuiIcon renders type node 1`] = `
 </svg>
 `;
 
+exports[`EuiIcon renders type number 1`] = `
+<svg
+  class="euiIcon euiIcon--medium"
+>
+  <title>
+    number icon
+  </title>
+  <use
+    href="#number"
+  />
+</svg>
+`;
+
 exports[`EuiIcon renders type pencil 1`] = `
 <svg
   class="euiIcon euiIcon--medium"
@@ -934,6 +947,19 @@ exports[`EuiIcon renders type starEmpty 1`] = `
   </title>
   <use
     href="#star_empty"
+  />
+</svg>
+`;
+
+exports[`EuiIcon renders type string 1`] = `
+<svg
+  class="euiIcon euiIcon--medium"
+>
+  <title>
+    string icon
+  </title>
+  <use
+    href="#string"
   />
 </svg>
 `;
