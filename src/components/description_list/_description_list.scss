@@ -96,24 +96,6 @@
   &.euiDescriptionList--inline {
     font-family: $euiCodeFontFamily;
     word-break: break-all;
-    filter: grayscale(100%);
-    padding: $euiSizeS;
-    border: solid 1px transparent;
-    border-bottom: $euiBorderThin;
-    margin-top: -1px;
-
-    &:hover {
-      filter: none;
-      border: $euiBorderThin;
-      cursor: pointer;
-      background: $euiColorEmptyShade;
-      @include euiBottomShadowMedium;
-      background-color: $euiColorHighlight;
-
-      .euiDescriptionList__title {
-        background-color: darken($euiColorHighlight, 5%);
-      }
-    }
 
     .euiDescriptionList__title {
       @include euiFontSizeS;
@@ -155,4 +137,41 @@
     }
   }
 
+}
+
+.discoverRow {
+  filter: grayscale(100%);
+  padding: $euiSizeS;
+  border: solid 1px transparent;
+  border-bottom: $euiBorderThin;
+  margin-top: -1px;
+
+  &:hover, &:focus {
+    filter: none;
+    border: $euiBorderThin;
+    cursor: pointer;
+    background: $euiColorEmptyShade;
+    @include euiBottomShadowMedium;
+    background-color: $euiColorHighlight;
+
+    .euiDescriptionList__title {
+      background-color: darken($euiColorHighlight, 5%);
+    }
+
+    .discoverRow__next {
+      opacity: 1;
+    }
+  }
+
+  .discoverRow__next {
+    opacity: 0;
+  }
+
+  &:focus {
+    background-color: $euiFocusBackgroundColor;
+
+    .euiDescriptionList__title {
+      background-color: darken($euiFocusBackgroundColor, 5%);
+    }
+  }
 }

@@ -3,6 +3,7 @@ import React, {
 } from 'react';
 
 import {
+  EuiKeyboardAccessible,
   EuiButton,
   EuiCode,
   EuiButtonEmpty,
@@ -34,7 +35,7 @@ import {
 
 import {
   KibanaChrome,
-  ManagementSideNav,
+  Query,
 } from '../partials';
 
 const favoriteVideoGames = [
@@ -110,12 +111,23 @@ export default class extends Component {
 
     for (let i = 0; i < 20; i++){
       results.push(
-        <div key={i}>
-          <EuiDescriptionList
-            type="inline"
-            listItems={favoriteVideoGames}
-          />
-        </div>
+        <EuiKeyboardAccessible key={i}>
+          <div className="discoverRow">
+            <EuiFlexGroup gutterSize="s" alignItems="center">
+              <EuiFlexItem>
+                <EuiDescriptionList
+                  type="inline"
+                  listItems={favoriteVideoGames}
+                />
+              </EuiFlexItem>
+              <EuiFlexItem grow={false}>
+                <div className="discoverRow__next">
+                  <EuiIcon type="arrowRight" />
+                </div>
+              </EuiFlexItem>
+            </EuiFlexGroup>
+          </div>
+        </EuiKeyboardAccessible>
       )
     }
 
@@ -128,9 +140,17 @@ export default class extends Component {
         <EuiPageHeader>
           <EuiPageHeaderSection>
             <EuiTitle size="l">
-              <h1>Discover</h1>
+              <h1>Some ridiculously long saved search name</h1>
             </EuiTitle>
           </EuiPageHeaderSection>
+          <EuiPageHeaderSection>
+            <EuiButton size="s" iconType="copy">
+              Reports & sharing
+            </EuiButton>
+          </EuiPageHeaderSection>
+        </EuiPageHeader>
+        <EuiPageHeader>
+          <Query />
         </EuiPageHeader>
         <EuiPageBody>
           <EuiPageSideBar>

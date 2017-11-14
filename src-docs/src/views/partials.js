@@ -3,6 +3,7 @@ export { default as KibanaHeader } from './header/header';
 export { default as TablePagination } from './pagination/customizable_pagination';
 export { default as ManagementSideNav } from './side_nav/side_nav_complicated';
 export { default as Table } from './table/table';
+export { default as Query } from './query_panel/query_panel_expanded';
 export {
   default as ToastList,
   addToast,
