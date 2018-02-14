@@ -88,6 +88,7 @@ export {
   EuiFieldPassword,
   EuiFieldSearch,
   EuiFieldText,
+  EuiFilePicker,
   EuiForm,
   EuiFormControlLayout,
   EuiFormErrorText,

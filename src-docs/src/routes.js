@@ -73,6 +73,9 @@ import { ErrorBoundaryExample }
 import { ExpressionExample }
   from './views/expression/expression_example';
 
+import { FilePickerExample }
+  from './views/file_picker/file_picker_example';
+
 import { FlexExample }
   from './views/flex/flex_example';
 
@@ -223,6 +226,7 @@ const components = [
   DescriptionListExample,
   ErrorBoundaryExample,
   ExpressionExample,
+  FilePickerExample,
   FlexExample,
   FlyoutExample,
   FormExample,
