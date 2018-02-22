@@ -134,6 +134,9 @@ import { PanelExample }
 import { PopoverExample }
   from './views/popover/popover_example';
 
+import { PortalExample }
+  from './views/portal/portal_example';
+
 import { ProgressExample }
   from './views/progress/progress_example';
 
@@ -167,8 +170,8 @@ import { TitleExample }
 import { ToastExample }
   from './views/toast/toast_example';
 
-import { TooltipExample }
-  from './views/tooltip/tooltip_example';
+import { ToolTipExample }
+  from './views/tool_tip/tool_tip_example';
 
 /**
  * Lowercases input and replaces spaces with hyphens:
@@ -264,7 +267,7 @@ const navigation = [{
     TextExample,
     TitleExample,
     ToastExample,
-    TooltipExample,
+    ToolTipExample,
   ].map(example => createExample(example)),
 }, {
   name: 'Forms',
@@ -285,6 +288,7 @@ const navigation = [{
     ErrorBoundaryExample,
     IsColorDarkExample,
     OutsideClickDetectorExample,
+    PortalExample,
   ].map(example => createExample(example)),
 }].map(({ name, items, ...rest }) => ({
   name,
