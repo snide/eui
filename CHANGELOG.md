@@ -2,7 +2,8 @@
 
 - Relaxed query syntax of `EuiSearchBar` to allow usage of hyphens without escaping ([#581](https://github.com/elastic/eui/pull/581))
 - Add support for expandable rows to `EuiBasicTable` ([#585](https://github.com/elastic/eui/pull/585))
-- Added `EuiComboBox` ([567](https://github.com/elastic/eui/pull/567))
+- Added `EuiComboBox` for selecting many options from a list of options ([567](https://github.com/elastic/eui/pull/567))
+- Added `EuiHighlight` for highlighting a substring within text ([567](https://github.com/elastic/eui/pull/567))
 
 **Bug fixes**
 
