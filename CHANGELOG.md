@@ -4,11 +4,15 @@
 - Add support for expandable rows to `EuiBasicTable` ([#585](https://github.com/elastic/eui/pull/585))
 - Added `EuiComboBox` for selecting many options from a list of options ([567](https://github.com/elastic/eui/pull/567))
 - Added `EuiHighlight` for highlighting a substring within text ([567](https://github.com/elastic/eui/pull/567))
-- `calculatePopoverPosition` service now accepts a `positions` argument so you can specify which positions are acceptable.
+- `calculatePopoverPosition` service now accepts a `positions` argument so you can specify which positions are acceptable ([567](https://github.com/elastic/eui/pull/567))
 
 **Bug fixes**
 
 - Relaxed query syntax of `EuiSearchBar` to allow usage of hyphens without escaping ([#581](https://github.com/elastic/eui/pull/581)
+
+**Breaking changes**
+
+- Renamed `euiBody-hasToolTip` class to `euiBody-hasPortalContent` ([567](https://github.com/elastic/eui/pull/567))
 
 # [`0.0.35`](https://github.com/elastic/eui/tree/v0.0.35)
 
