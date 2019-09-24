@@ -10,7 +10,6 @@
   @include euiFontSizeS;
   text-align: left;
   border: none;
-  padding: inherit 4px;
   transform: none !important; /* 1 */
   animation: none !important; /* 1 */
   transition: all $euiAnimSpeedFast ease-in; /* 2 */
@@ -27,6 +26,23 @@
 
   &:focus {
     background-color: $euiFocusBackgroundColor;
+    position: relative;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      background-color: $euiFocusBackgroundColor;
+      width: $euiSizeS;
+    }
+
+    &:before {
+      left: -$euiSizeS;
+    }
+    &:after {
+      right: -$euiSizeS;
+    }
   }
 
   &:disabled {
