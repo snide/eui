@@ -128,6 +128,7 @@ export const iconTypes = [
   'number',
   'offline',
   'online',
+  'package',
   'partial',
   'pause',
   'pencil',
